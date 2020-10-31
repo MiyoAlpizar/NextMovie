@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  NextMovie
+
+  Created by Miyo Alpízar on 30/10/20.
+  
+*/
+
+//MovieListEndpoint
+"Now Playing" = "Reproduciendo Ahora";
+"Upcoming" = "Próximamente";
+"Top Rated" = "Mejores Calificadas";
+"Popular" = "Popular";
+
+
+//MovieError
+"Failed to fecth data" = "Error al obtener datos";
+"Invalid endpoint" = "Enpoint invalido";
+"Invalid response" = "Respuesta invalida";
+"No data" = "No hay datos";
+"Failed to decode data" = "Error al decodificar datos";
+
+
+
+

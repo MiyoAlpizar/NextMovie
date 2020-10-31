@@ -21,6 +21,7 @@
 		A27261E4254D2DD600EE2478 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27261E3254D2DD600EE2478 /* MovieBackdropCard.swift */; };
 		A27261E8254D326500EE2478 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A27261E7254D326500EE2478 /* movie_list.json */; };
 		A27261EC254D34B100EE2478 /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27261EB254D34B100EE2478 /* MovieBackdropCarouselView.swift */; };
+		A27261EF254D370800EE2478 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27261EE254D370800EE2478 /* MoviePosterCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		A27261E3254D2DD600EE2478 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
 		A27261E7254D326500EE2478 /* movie_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
 		A27261EB254D34B100EE2478 /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
+		A27261EE254D370800EE2478 /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				A27261E3254D2DD600EE2478 /* MovieBackdropCard.swift */,
 				A27261EB254D34B100EE2478 /* MovieBackdropCarouselView.swift */,
+				A27261EE254D370800EE2478 /* MoviePosterCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				A27261AE254CDD2D00EE2478 /* NextMovieApp.swift in Sources */,
 				A27261C4254CDE5200EE2478 /* MovieService.swift in Sources */,
 				A27261D9254CEE3000EE2478 /* Movie+Stub.swift in Sources */,
+				A27261EF254D370800EE2478 /* MoviePosterCard.swift in Sources */,
 				A27261E4254D2DD600EE2478 /* MovieBackdropCard.swift in Sources */,
 				A27261BF254CDD4500EE2478 /* Movie.swift in Sources */,
 				A27261D3254CE2ED00EE2478 /* MovieStore.swift in Sources */,

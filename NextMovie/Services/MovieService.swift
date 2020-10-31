@@ -17,14 +17,14 @@ protocol MovieService {
 
 enum MovieListEndpoint: String {
     case nowPlaying = "now_playing"
-    case upcomig
+    case upcoming
     case topRated = "top_rated"
     case popular
     var description: String {
         switch self {
         case .nowPlaying:
             return NSLocalizedString("Now Playing", comment: "")
-        case .upcomig:
+        case .upcoming:
             return NSLocalizedString("Upcoming", comment: "")
         case .topRated:
             return NSLocalizedString("Top Rated", comment: "")

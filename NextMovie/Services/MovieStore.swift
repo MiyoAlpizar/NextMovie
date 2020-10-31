@@ -47,7 +47,7 @@ class MovieStore: MovieService {
     }
     
     private func loadURLAndDecode<D: Decodable>(url: URL, params: [String: String]? = nil, completion: @escaping(Result<D, MovieError>) -> ()) {
-        guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
+        guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
             completion(.failure(.invalidEndpoint))
             return
         }
@@ -56,10 +56,13 @@ class MovieStore: MovieService {
             queryItems.append(contentsOf: params.map { URLQueryItem(name: $0.key, value: $0.value)})
         }
         
+        urlComponents.queryItems = queryItems
+        
         guard  let finalUrl = urlComponents.url else {
             completion(.failure(.invalidEndpoint))
             return
         }
+        
         
         urlSession.dataTask(with: finalUrl) { [weak self] (data, response, error) in
             guard let self = self else { return }

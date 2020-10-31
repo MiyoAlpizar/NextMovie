@@ -20,6 +20,8 @@
 "No data" = "No hay datos";
 "Failed to decode data" = "Error al decodificar datos";
 
-
+//Default
+"The Movies" = "Las Pelis";
+"Retry" = "Reintentar";
 
 

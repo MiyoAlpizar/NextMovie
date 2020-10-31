@@ -9,7 +9,7 @@ import Foundation
 
 extension Movie {
     static var stubbedMovies: [Movie] {
-        let response: MovieResponse? = try? Bundle.main.loadAndDecode(filename: "movie_list")
+        let response: MovieResponse? = try? Bundle.main.loadAndDecodeJSON(filename: "movie_list")
         return response!.results
     }
     
@@ -20,7 +20,7 @@ extension Movie {
 }
 
 extension Bundle {
-    func loadAndDecode<D: Decodable>(filename: String) throws -> D? {
+    func loadAndDecodeJSON<D: Decodable>(filename: String) throws -> D? {
         do {
             guard let url = self.url(forResource: filename, withExtension: "json") else {
                 return nil
